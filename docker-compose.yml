@@ -3,7 +3,8 @@ version: '3.6'
 services:
   custompios:
     image: guysoft/custompios:devel
-    container_name: mydistro_builder
+    env_file: .env
+    container_name: ${DISTRO_NAME}-build
     command: /distro/src/build_dist
     tty: true
     restart: always
