@@ -9,4 +9,4 @@ raspbian_latest_image: 2019-04-08-raspbian-stretch-lite.zip
 	# 03ec326d45c6eb6cef848cf9a1d6c7315a9410b49a276a6b28e67a40b11fdfcf
 
 build_dist:
-	docker-compose run custompios /distro/src/build_dist
+	time docker-compose run custompios

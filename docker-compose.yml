@@ -4,6 +4,7 @@ services:
   custompios:
     image: guysoft/custompios:devel
     container_name: mydistro_builder
+    command: /distro/src/build_dist
     tty: true
     restart: always
     privileged: true
