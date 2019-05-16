@@ -1,5 +1,8 @@
 default: build_dist
 
+clean:
+	$(RM) -r ./workspace
+
 2019-04-08-raspbian-stretch-lite.zip:
 	# curl --location --remote-name https://downloads.raspberrypi.org/raspbian_lite_latest
 	curl --location --remote-name http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip
