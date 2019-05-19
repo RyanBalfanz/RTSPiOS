@@ -5,7 +5,7 @@ services:
     image: guysoft/custompios:devel
     env_file: .env
     container_name: ${DISTRO_NAME}-build
-    command: /distro/src/build_dist
+    #command: /distro/src/build_dist
     tty: true
     restart: always
     privileged: true
